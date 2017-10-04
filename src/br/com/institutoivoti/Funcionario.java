@@ -2,6 +2,7 @@ package br.com.institutoivoti;
 
 public class Funcionario {
 
+	String nome;
 	String cpf;
 	double salario;
 
@@ -17,4 +18,7 @@ public class Funcionario {
 		return cpf = Cpf;
 	}
 
+	public String GetNome(String nomee) {
+		return nome = nomee;
+	}
 }
