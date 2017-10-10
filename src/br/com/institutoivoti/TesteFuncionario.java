@@ -24,7 +24,7 @@ public class TesteFuncionario {
 	public void testenome() {
 		Pessoa pessoa = new Pessoa();
 		pessoa.Nome("Ody");
-		assertEquals(pessoa.GetNome("Ody"), "Ody");
+		assertEquals(pessoa.GetNome(), "Ody");
 	}
 
 	@Test
