@@ -14,24 +14,24 @@ public class TesteFuncionario {
 	}
 
 	@Test
-	public void teste() {
-		Funcionario funcionario = new Funcionario();
-		funcionario.Cpf("36942578029");
-		assertEquals(funcionario.GetCpf(), "36942578029");
+	public void testecpf() {
+		Pessoa pessoa = new Pessoa();
+		pessoa.Cpf("36942578029");
+		assertEquals(pessoa.GetCpf(), "36942578029");
 	}
 
 	@Test
 	public void testenome() {
-		Funcionario funcionario = new Funcionario();
-		funcionario.GetNome("Ody");
-		assertEquals(funcionario.GetNome("Ody"), "Ody");
+		Pessoa pessoa = new Pessoa();
+		pessoa.Nome("Ody");
+		assertEquals(pessoa.GetNome("Ody"), "Ody");
 	}
 
 	@Test
-	public void testasalario() {
+	public void testSalario() {
 		Funcionario funcionario = new Funcionario();
-		funcionario.salario(1500.00)
-		assertEquals(funcionario.Getsalario(0), 1500.00);
+		funcionario.Salario(2000);
+		assertEquals(funcionario.GetSalario(), 2000, 0);
 	}
 
 }
